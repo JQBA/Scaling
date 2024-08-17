@@ -10,7 +10,7 @@ func _ready():
 func _process(delta):
 	pass
 
-func 
 
 func _on_rigid_body_2d_body_shape_entered(body_rid, body, body_shape_index, local_shape_index):
-	pass # Replace with function body.
+	if body.name == "PlayerNode":
+		
