@@ -1,0 +1,33 @@
+[gd_scene load_steps=2 format=3 uid="uid://du5qxvptioodf"]
+
+[ext_resource type="Script" path="res://Scipts/EndLevelScreen.gd" id="1_sabt8"]
+
+[node name="EndLevelScreen" type="Node2D"]
+script = ExtResource("1_sabt8")
+
+[node name="NextLevelButton" type="Button" parent="."]
+offset_left = 668.0
+offset_top = 371.0
+offset_right = 758.0
+offset_bottom = 402.0
+text = "Next Level"
+
+[node name="EndGameButton" type="Button" parent="."]
+offset_left = 324.0
+offset_top = 369.0
+offset_right = 411.0
+offset_bottom = 400.0
+text = "Exit Game
+"
+
+[node name="ResetLevel" type="Button" parent="."]
+offset_left = 503.0
+offset_top = 369.0
+offset_right = 568.0
+offset_bottom = 400.0
+text = "Restart
+"
+
+[connection signal="pressed" from="NextLevelButton" to="." method="_on_next_level_button_pressed"]
+[connection signal="pressed" from="EndGameButton" to="." method="_on_end_game_button_pressed"]
+[connection signal="pressed" from="ResetLevel" to="." method="_on_reset_level_pressed"]

@@ -35,6 +35,7 @@ shape = SubResource("RectangleShape2D_p12gy")
 position = Vector2(447, 131)
 
 [node name="EndDoor" parent="." instance=ExtResource("5_gtyjv")]
-position = Vector2(893, 174)
+position = Vector2(894, 174)
+collision_mask = 2
 
 [connection signal="child_exiting_tree" from="." to="." method="_on_child_exiting_tree"]
