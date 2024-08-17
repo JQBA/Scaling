@@ -1,28 +1,21 @@
 [gd_scene load_steps=4 format=3 uid="uid://bt1kg0e8y8pqe"]
 
 [ext_resource type="Script" path="res://player.gd" id="1_o31bv"]
+[ext_resource type="Texture2D" uid="uid://bfm05nbia1pjv" path="res://icon.svg" id="2_jdggv"]
 
-[sub_resource type="SpriteFrames" id="SpriteFrames_ksbdc"]
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_uvv55"]
+size = Vector2(130, 132)
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_o171k"]
-size = Vector2(40, 40)
-
-[node name="PlayerNode" type="Node2D"]
+[node name="PlayerNode" type="CharacterBody2D"]
 position = Vector2(-1, 0)
 script = ExtResource("1_o31bv")
+JumpForce = 300
 
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
-sprite_frames = SubResource("SpriteFrames_ksbdc")
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, -69)
+shape = SubResource("RectangleShape2D_uvv55")
 
-[node name="CharacterBody2D" type="CharacterBody2D" parent="."]
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D"]
-shape = SubResource("RectangleShape2D_o171k")
-
-[node name="Control" type="Control" parent="."]
-layout_mode = 3
-anchors_preset = 0
-offset_left = -21.0
-offset_top = -19.0
-offset_right = 19.0
-offset_bottom = 21.0
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(0, -68)
+scale = Vector2(1, 1.02344)
+texture = ExtResource("2_jdggv")
