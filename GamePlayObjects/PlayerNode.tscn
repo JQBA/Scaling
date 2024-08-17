@@ -1,25 +1,28 @@
-[gd_scene load_steps=5 format=3 uid="uid://bt1kg0e8y8pqe"]
+[gd_scene load_steps=4 format=3 uid="uid://bt1kg0e8y8pqe"]
 
 [ext_resource type="Script" path="res://player.gd" id="1_o31bv"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_ksbdc"]
 
-[sub_resource type="PhysicsMaterial" id="PhysicsMaterial_yg01d"]
-
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_o171k"]
 size = Vector2(40, 40)
 
 [node name="PlayerNode" type="Node2D"]
-position = Vector2(4, 325)
+position = Vector2(-1, 0)
 script = ExtResource("1_o31bv")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_ksbdc")
 
-[node name="RigidBody2D" type="RigidBody2D" parent="."]
-position = Vector2(4, 3)
-physics_material_override = SubResource("PhysicsMaterial_yg01d")
+[node name="CharacterBody2D" type="CharacterBody2D" parent="."]
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="RigidBody2D"]
-position = Vector2(-1, -333)
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D"]
 shape = SubResource("RectangleShape2D_o171k")
+
+[node name="Control" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_left = -21.0
+offset_top = -19.0
+offset_right = 19.0
+offset_bottom = 21.0
