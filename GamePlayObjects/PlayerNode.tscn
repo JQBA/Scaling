@@ -1,25 +1,21 @@
 [gd_scene load_steps=5 format=3 uid="uid://bt1kg0e8y8pqe"]
 
 [ext_resource type="Script" path="res://player.gd" id="1_o31bv"]
+[ext_resource type="Texture2D" uid="uid://bfm05nbia1pjv" path="res://icon.svg" id="2_jdggv"]
 
-[sub_resource type="SpriteFrames" id="SpriteFrames_ksbdc"]
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_uvv55"]
+size = Vector2(130, 132)
 
-[sub_resource type="PhysicsMaterial" id="PhysicsMaterial_yg01d"]
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_o171k"]
-size = Vector2(40, 40)
-
-[node name="PlayerNode" type="Node2D"]
-position = Vector2(4, 325)
+[node name="PlayerNode" type="CharacterBody2D"]
+position = Vector2(-1, 0)
 script = ExtResource("1_o31bv")
+JumpForce = 300
 
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
-sprite_frames = SubResource("SpriteFrames_ksbdc")
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, -69)
+shape = SubResource("RectangleShape2D_uvv55")
 
-[node name="RigidBody2D" type="RigidBody2D" parent="."]
-position = Vector2(4, 3)
-physics_material_override = SubResource("PhysicsMaterial_yg01d")
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="RigidBody2D"]
-position = Vector2(-1, -333)
-shape = SubResource("RectangleShape2D_o171k")
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(0, -68)
+scale = Vector2(1, 1.02344)
+texture = ExtResource("2_jdggv")
