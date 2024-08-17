@@ -33,6 +33,7 @@ shape = SubResource("RectangleShape2D_p12gy")
 
 [node name="GrowthCheese" parent="." instance=ExtResource("4_i0xjn")]
 position = Vector2(447, 131)
+collision_mask = 2
 
 [node name="EndDoor" parent="." instance=ExtResource("5_gtyjv")]
 position = Vector2(894, 174)

@@ -7,7 +7,7 @@
 size = Vector2(130, 132)
 
 [node name="PlayerNode" type="CharacterBody2D"]
-position = Vector2(-1, 0)
+position = Vector2(3, 19)
 collision_layer = 2
 script = ExtResource("1_sysrc")
 
