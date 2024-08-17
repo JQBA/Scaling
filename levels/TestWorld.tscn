@@ -1,8 +1,10 @@
-[gd_scene load_steps=6 format=3 uid="uid://3lus1g6re5gs"]
+[gd_scene load_steps=8 format=3 uid="uid://3lus1g6re5gs"]
 
 [ext_resource type="Script" path="res://LevelScript.gd" id="1_diwxs"]
-[ext_resource type="PackedScene" uid="uid://dehltyk5itfqe" path="res://GamePlayObjects/GrowthPlatform.tscn" id="1_yt3i3"]
+[ext_resource type="PackedScene" uid="uid://dehltyk5itfqe" path="res://GamePlayObjects/DuplicationCheese.tscn" id="1_yt3i3"]
 [ext_resource type="PackedScene" uid="uid://bt1kg0e8y8pqe" path="res://GamePlayObjects/PlayerNode.tscn" id="2_eq8bi"]
+[ext_resource type="PackedScene" uid="uid://b63domy3ko3tn" path="res://GamePlayObjects/GrowthCheese.tscn" id="4_i0xjn"]
+[ext_resource type="PackedScene" uid="uid://bkwmxdq7lkoxa" path="res://GamePlayObjects/EndDoor.tscn" id="5_gtyjv"]
 
 [sub_resource type="QuadMesh" id="QuadMesh_hb7cc"]
 size = Vector2(1000, 100)
@@ -25,8 +27,14 @@ position = Vector2(494, 302)
 mesh = SubResource("QuadMesh_hb7cc")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
-position = Vector2(-5, 4)
+position = Vector2(-1, -3)
 scale = Vector2(50, 5.12)
 shape = SubResource("RectangleShape2D_p12gy")
+
+[node name="GrowthCheese" parent="." instance=ExtResource("4_i0xjn")]
+position = Vector2(447, 131)
+
+[node name="EndDoor" parent="." instance=ExtResource("5_gtyjv")]
+position = Vector2(893, 174)
 
 [connection signal="child_exiting_tree" from="." to="." method="_on_child_exiting_tree"]

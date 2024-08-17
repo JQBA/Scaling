@@ -1,0 +1,20 @@
+[gd_scene load_steps=4 format=3 uid="uid://b63domy3ko3tn"]
+
+[ext_resource type="Texture2D" uid="uid://b6xs3ouxvjwms" path="res://Assets/piece-cheese-isolated.jpg" id="1_2ufcr"]
+[ext_resource type="Script" path="res://Scipts/GrowthCheese.gd" id="1_cwofg"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_no28x"]
+radius = 21.455
+
+[node name="GrowthCheese" type="Area2D"]
+script = ExtResource("1_cwofg")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(0.0845438, 0.1)
+texture = ExtResource("1_2ufcr")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+scale = Vector2(2.6, 1.95425)
+shape = SubResource("CircleShape2D_no28x")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
