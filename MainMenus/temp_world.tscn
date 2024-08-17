@@ -1,7 +1,8 @@
 [gd_scene load_steps=5 format=3 uid="uid://daweyhpdc2csh"]
 
 [ext_resource type="Texture2D" uid="uid://c5uf6o4fvq0id" path="res://Assets/Sprite_Sheet.png" id="1_a3nid"]
-[ext_resource type="Script" path="res://MainMenus/TempPlayer.gd" id="2_221gi"]
+[ext_resource type="Script" path="res://MainMenus/main_menu.gd" id="2_221gi"]
+
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_gfbd7"]
 texture = ExtResource("1_a3nid")

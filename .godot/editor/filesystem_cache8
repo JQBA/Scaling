@@ -1,3 +1,24 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1723851637
-icon.svg::CompressedTexture2D::2763709618281168019::1723849212::1723849223::1::::<><>::
+::res://::1723874808
+GrowthPlatform.gd::GDScript::-1::1723872353::0::1::::<>Node<>::
+icon.svg::CompressedTexture2D::2763709618281168019::1723872353::1723874773::1::::<><>::
+player.gd::GDScript::-1::1723872353::0::1::::<>Node<>::
+::res://Assets/::1723874808
+BallOfRats.png::CompressedTexture2D::4208571770472804209::1723872353::1723874773::1::::<><>::
+BldBlue.png::CompressedTexture2D::2538975931792422060::1723873863::1723873934::1::::<><>::
+BldGreen (2).png::CompressedTexture2D::7908820101935726141::1723873934::1723874808::1::::<><>::
+BldGreen.png::CompressedTexture2D::3736011197236926048::1723873832::1723873934::1::::<><>::
+BldOrange.png::CompressedTexture2D::8327923831277585667::1723873900::1723873934::1::::<><>::
+menu.png::CompressedTexture2D::7603533133174589206::1723872353::1723874773::1::::<><>::
+rat.png::CompressedTexture2D::1880999845223512820::1723872353::1723874773::1::::<><>::
+Sprite_Sheet.png::CompressedTexture2D::6920153956565381543::1723872353::1723874773::1::::<><>::
+::res://Backgrounds/::1723874773
+MenuBackground.png::CompressedTexture2D::4997898306847519933::1723872353::1723874773::1::::<><>::
+::res://GamePlayObjects/::1723872353
+GrowthPlatform.tscn::PackedScene::7455171164297429392::1723872353::0::1::::<><>::res://GrowthPlatform.gd
+PlayerNode.tscn::PackedScene::3774301739908091784::1723872353::0::1::::<><>::res://player.gd
+::res://MainMenus/::1723874808
+main_menu.gd::GDScript::-1::1723872353::0::1::::<>Node2D<>::
+main_menu.tscn::PackedScene::7590351206183628655::1723874773::0::1::::<><>::res://MainMenus/main_menu.gd<>uid://12f17jwoysw7::::res://Assets/rat.png
+options.tscn::PackedScene::4835302780549812938::1723872353::0::1::::<><>::
+temp_world.tscn::PackedScene::7204964479668961931::1723874773::0::1::::<><>::uid://c5uf6o4fvq0id::::res://Assets/Sprite_Sheet.png<>res://MainMenus/main_menu.gd

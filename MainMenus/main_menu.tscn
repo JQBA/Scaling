@@ -1,7 +1,6 @@
-[gd_scene load_steps=5 format=3 uid="uid://dge28ftgl0fv0"]
+[gd_scene load_steps=4 format=3 uid="uid://dge28ftgl0fv0"]
 
-[ext_resource type="Script" path="res://MainMenus/main_menu.gd" id="1_556l6"]
-[ext_resource type="Script" path="res://MainMenus/ParallaxBackground.gd" id="2_fvi5q"]
+[ext_resource type="Script" path="res://MainMenus/main_menu.gd" id="2_fvi5q"]
 [ext_resource type="Texture2D" uid="uid://12f17jwoysw7" path="res://Assets/rat.png" id="2_qrool"]
 
 [sub_resource type="GDScript" id="GDScript_ptd63"]
@@ -20,7 +19,7 @@ func _process(delta):
 "
 
 [node name="MainMenu" type="Node2D"]
-script = ExtResource("1_556l6")
+script = ExtResource("2_fvi5q")
 
 [node name="start" type="Button" parent="."]
 offset_left = 401.0
