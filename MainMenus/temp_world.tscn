@@ -1,0 +1,13 @@
+[gd_scene format=3 uid="uid://daweyhpdc2csh"]
+
+[node name="TempWorld" type="Node2D"]
+
+[node name="TileMap" type="TileMap" parent="."]
+format = 2
+
+[node name="ParallaxBackground" type="ParallaxBackground" parent="."]
+
+[node name="ParallaxLayer" type="ParallaxLayer" parent="ParallaxBackground"]
+
+[node name="LevelBackgroundImage" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer"]
+position = Vector2(-1, 2)
