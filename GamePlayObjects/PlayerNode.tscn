@@ -1,0 +1,22 @@
+[gd_scene load_steps=5 format=3 uid="uid://bt1kg0e8y8pqe"]
+
+[ext_resource type="Script" path="res://player.gd" id="1_o31bv"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_ksbdc"]
+
+[sub_resource type="PhysicsMaterial" id="PhysicsMaterial_yg01d"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_o171k"]
+size = Vector2(40, 40)
+
+[node name="PlayerNode" type="Node"]
+script = ExtResource("1_o31bv")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_ksbdc")
+
+[node name="RigidBody2D" type="RigidBody2D" parent="."]
+physics_material_override = SubResource("PhysicsMaterial_yg01d")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="RigidBody2D"]
+shape = SubResource("RectangleShape2D_o171k")
