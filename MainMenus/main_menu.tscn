@@ -1,22 +1,6 @@
-[gd_scene load_steps=4 format=3 uid="uid://dge28ftgl0fv0"]
+[gd_scene load_steps=2 format=3 uid="uid://dge28ftgl0fv0"]
 
 [ext_resource type="Script" path="res://MainMenus/main_menu.gd" id="2_fvi5q"]
-[ext_resource type="Texture2D" uid="uid://12f17jwoysw7" path="res://Assets/rat.png" id="2_qrool"]
-
-[sub_resource type="GDScript" id="GDScript_ptd63"]
-script/source = "extends ParallaxLayer
-
-var scrolling_speed = 100
-
-# Called when the node enters the scene tree for the first time.
-func _ready():
-	pass # Replace with function body.
-
-
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta):
-	pass
-"
 
 [node name="MainMenu" type="Node2D"]
 script = ExtResource("2_fvi5q")
@@ -42,19 +26,6 @@ offset_right = 342.0
 offset_bottom = 375.0
 text = "Options
 "
-
-[node name="ParallaxBackground" type="ParallaxBackground" parent="."]
-script = ExtResource("2_fvi5q")
-
-[node name="ParallaxLayer" type="ParallaxLayer" parent="ParallaxBackground"]
-position = Vector2(-261, -74)
-motion_mirroring = Vector2(634, 0)
-script = SubResource("GDScript_ptd63")
-
-[node name="Menu" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer"]
-position = Vector2(696, 417)
-scale = Vector2(1.39, 1.39)
-texture = ExtResource("2_qrool")
 
 [connection signal="pressed" from="start" to="." method="_on_start_pressed"]
 [connection signal="pressed" from="Quit" to="." method="_on_quit_pressed"]

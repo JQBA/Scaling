@@ -28,3 +28,5 @@ mesh = SubResource("QuadMesh_hb7cc")
 position = Vector2(-5, 4)
 scale = Vector2(50, 5.12)
 shape = SubResource("RectangleShape2D_p12gy")
+
+[connection signal="child_exiting_tree" from="." to="." method="_on_child_exiting_tree"]
