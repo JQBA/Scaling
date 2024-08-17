@@ -9,14 +9,17 @@
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_o171k"]
 size = Vector2(40, 40)
 
-[node name="PlayerNode" type="Node"]
+[node name="PlayerNode" type="Node2D"]
+position = Vector2(4, 325)
 script = ExtResource("1_o31bv")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_ksbdc")
 
 [node name="RigidBody2D" type="RigidBody2D" parent="."]
+position = Vector2(4, 3)
 physics_material_override = SubResource("PhysicsMaterial_yg01d")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="RigidBody2D"]
+position = Vector2(-1, -333)
 shape = SubResource("RectangleShape2D_o171k")
