@@ -1,9 +1,9 @@
 [gd_scene load_steps=8 format=3 uid="uid://3lus1g6re5gs"]
 
 [ext_resource type="Script" path="res://LevelScript.gd" id="1_diwxs"]
-[ext_resource type="PackedScene" uid="uid://dehltyk5itfqe" path="res://GamePlayObjects/DuplicationCheese.tscn" id="1_yt3i3"]
+[ext_resource type="PackedScene" path="res://GamePlayObjects/DuplicationCheese.tscn" id="1_yt3i3"]
 [ext_resource type="PackedScene" uid="uid://bt1kg0e8y8pqe" path="res://GamePlayObjects/PlayerNode.tscn" id="2_eq8bi"]
-[ext_resource type="PackedScene" uid="uid://b63domy3ko3tn" path="res://GamePlayObjects/GrowthCheese.tscn" id="4_i0xjn"]
+[ext_resource type="PackedScene" path="res://GamePlayObjects/GrowthCheese.tscn" id="4_i0xjn"]
 [ext_resource type="PackedScene" uid="uid://bkwmxdq7lkoxa" path="res://GamePlayObjects/EndDoor.tscn" id="5_gtyjv"]
 
 [sub_resource type="QuadMesh" id="QuadMesh_hb7cc"]

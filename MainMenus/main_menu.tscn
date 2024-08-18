@@ -1,31 +1,121 @@
-[gd_scene load_steps=2 format=3 uid="uid://dge28ftgl0fv0"]
+[gd_scene load_steps=14 format=3 uid="uid://dge28ftgl0fv0"]
 
 [ext_resource type="Script" path="res://MainMenus/main_menu.gd" id="2_fvi5q"]
+[ext_resource type="Texture2D" uid="uid://dxii2lb0cryud" path="res://Assets/start_button.png" id="2_jnj5t"]
+[ext_resource type="Texture2D" uid="uid://bf80d0ernq5n2" path="res://Assets/quit_button.png" id="3_jbowe"]
+[ext_resource type="Texture2D" uid="uid://c4x2mpn7cirie" path="res://Assets/options_button.png" id="4_s8cx8"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_chxga"]
+atlas = ExtResource("2_jnj5t")
+region = Rect2(0, 0, 64, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8qgbg"]
+atlas = ExtResource("2_jnj5t")
+region = Rect2(64, 0, 64, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_y4wfi"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_chxga")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_8qgbg")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_bhj3y"]
+atlas = ExtResource("3_jbowe")
+region = Rect2(0, 0, 64, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_lhblm"]
+atlas = ExtResource("3_jbowe")
+region = Rect2(64, 0, 64, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_qjwds"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_bhj3y")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_lhblm")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_imrxv"]
+atlas = ExtResource("4_s8cx8")
+region = Rect2(0, 0, 64, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8o32s"]
+atlas = ExtResource("4_s8cx8")
+region = Rect2(64, 0, 64, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_0ef6g"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_imrxv")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_8o32s")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
 
 [node name="MainMenu" type="Node2D"]
 script = ExtResource("2_fvi5q")
 
 [node name="start" type="Button" parent="."]
-offset_left = 401.0
-offset_top = 47.0
-offset_right = 800.0
-offset_bottom = 256.0
+offset_left = 402.0
+offset_top = 55.0
+offset_right = 801.0
+offset_bottom = 264.0
 text = "start"
 
+[node name="start img" type="AnimatedSprite2D" parent="start"]
+position = Vector2(201.75, 103.5)
+scale = Vector2(6.47656, 6.78125)
+sprite_frames = SubResource("SpriteFrames_y4wfi")
+
 [node name="Quit" type="Button" parent="."]
-offset_left = 398.0
-offset_top = 377.0
-offset_right = 818.0
-offset_bottom = 542.0
+offset_left = 428.0
+offset_top = 468.0
+offset_right = 776.0
+offset_bottom = 610.0
 text = "Quit"
 
+[node name="quit img" type="AnimatedSprite2D" parent="Quit"]
+position = Vector2(174, 71)
+scale = Vector2(5.71875, 5.125)
+sprite_frames = SubResource("SpriteFrames_qjwds")
+
 [node name="Options" type="Button" parent="."]
-offset_left = 25.0
-offset_top = 234.0
-offset_right = 342.0
-offset_bottom = 375.0
+offset_left = 444.0
+offset_top = 287.0
+offset_right = 761.0
+offset_bottom = 428.0
 text = "Options
 "
 
+[node name="options img" type="AnimatedSprite2D" parent="Options"]
+position = Vector2(163, 71)
+scale = Vector2(5.17188, 5.09375)
+sprite_frames = SubResource("SpriteFrames_0ef6g")
+
+[connection signal="mouse_entered" from="start" to="." method="_on_start_mouse_entered"]
+[connection signal="mouse_exited" from="start" to="." method="_on_start_mouse_exited"]
 [connection signal="pressed" from="start" to="." method="_on_start_pressed"]
+[connection signal="mouse_entered" from="Quit" to="." method="_on_quit_mouse_entered"]
+[connection signal="mouse_exited" from="Quit" to="." method="_on_quit_mouse_exited"]
 [connection signal="pressed" from="Quit" to="." method="_on_quit_pressed"]
+[connection signal="mouse_entered" from="Options" to="." method="_on_options_mouse_entered"]
+[connection signal="mouse_exited" from="Options" to="." method="_on_options_mouse_exited"]

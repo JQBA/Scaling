@@ -2,7 +2,7 @@ extends Node2D
 
 
 func _on_next_level_button_pressed():
-	get_tree().change_scene_to_file("res://levels/Level2.tscn")
+	get_tree().change_scene_to_file("res://levels/Level_01.tscn")
 
 
 func _on_end_game_button_pressed():
