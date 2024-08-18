@@ -1,139 +1,60 @@
-[gd_scene load_steps=16 format=3 uid="uid://dge28ftgl0fv0"]
+[gd_scene load_steps=10 format=3 uid="uid://dge28ftgl0fv0"]
 
 [ext_resource type="Script" path="res://MainMenus/main_menu.gd" id="2_fvi5q"]
-[ext_resource type="Texture2D" uid="uid://dxii2lb0cryud" path="res://Assets/start_button.png" id="2_jnj5t"]
-[ext_resource type="Texture2D" uid="uid://bf80d0ernq5n2" path="res://Assets/quit_button.png" id="3_jbowe"]
-[ext_resource type="Texture2D" uid="uid://c4x2mpn7cirie" path="res://Assets/options_button.png" id="4_s8cx8"]
-[ext_resource type="Texture2D" uid="uid://bte235xyth1ru" path="res://Assets/Background1.png" id="5_ayr31"]
-[ext_resource type="Texture2D" uid="uid://bf2to6ajgpsfw" path="res://Assets/Background2.png" id="6_huwn4"]
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_chxga"]
-atlas = ExtResource("2_jnj5t")
-region = Rect2(0, 0, 64, 32)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_8qgbg"]
-atlas = ExtResource("2_jnj5t")
-region = Rect2(64, 0, 64, 32)
-
-[sub_resource type="SpriteFrames" id="SpriteFrames_y4wfi"]
-animations = [{
-"frames": [{
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_chxga")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_8qgbg")
-}],
-"loop": true,
-"name": &"default",
-"speed": 5.0
-}]
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_bhj3y"]
-atlas = ExtResource("3_jbowe")
-region = Rect2(0, 0, 64, 32)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_lhblm"]
-atlas = ExtResource("3_jbowe")
-region = Rect2(64, 0, 64, 32)
-
-[sub_resource type="SpriteFrames" id="SpriteFrames_qjwds"]
-animations = [{
-"frames": [{
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_bhj3y")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_lhblm")
-}],
-"loop": true,
-"name": &"default",
-"speed": 5.0
-}]
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_imrxv"]
-atlas = ExtResource("4_s8cx8")
-region = Rect2(0, 0, 64, 32)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_8o32s"]
-atlas = ExtResource("4_s8cx8")
-region = Rect2(64, 0, 64, 32)
-
-[sub_resource type="SpriteFrames" id="SpriteFrames_0ef6g"]
-animations = [{
-"frames": [{
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_imrxv")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_8o32s")
-}],
-"loop": true,
-"name": &"default",
-"speed": 5.0
-}]
+[ext_resource type="Texture2D" uid="uid://c1hiex5kmp5cm" path="res://Assets/Buttons/Start/startbutton_up.png" id="2_mmul1"]
+[ext_resource type="Texture2D" uid="uid://bsmtikcef2n3o" path="res://Assets/Buttons/Start/startbutton_down.png" id="3_76660"]
+[ext_resource type="Texture2D" uid="uid://jxudgkp8bs4a" path="res://Assets/Buttons/Options/optionbutton_up.png" id="4_8x20i"]
+[ext_resource type="Texture2D" uid="uid://bte235xyth1ru" path="res://Backgrounds/Background1.png" id="5_ayr31"]
+[ext_resource type="Texture2D" uid="uid://cpnisp8q2fr7b" path="res://Assets/Buttons/Options/optionbutton_down.png" id="5_p8swo"]
+[ext_resource type="Texture2D" uid="uid://brxrrop4j82qg" path="res://Assets/Buttons/Quit/quitbutton_up.png" id="6_8xl34"]
+[ext_resource type="Texture2D" uid="uid://bf2to6ajgpsfw" path="res://Backgrounds/Background2.png" id="6_huwn4"]
+[ext_resource type="Texture2D" uid="uid://4sn4dnv3b8ex" path="res://Assets/Buttons/Quit/quitbutton_down.png" id="7_o50og"]
 
 [node name="MainMenu" type="Node2D"]
 script = ExtResource("2_fvi5q")
 
-[node name="start" type="Button" parent="."]
-offset_left = 402.0
-offset_top = 55.0
-offset_right = 801.0
-offset_bottom = 264.0
-text = "start"
+[node name="Start" type="TextureButton" parent="."]
+offset_left = 64.0
+offset_top = 224.0
+offset_right = 128.0
+offset_bottom = 256.0
+scale = Vector2(3, 3)
+texture_normal = ExtResource("2_mmul1")
+texture_hover = ExtResource("3_76660")
 
-[node name="start img" type="AnimatedSprite2D" parent="start"]
-position = Vector2(201.75, 103.5)
-scale = Vector2(6.47656, 6.78125)
-sprite_frames = SubResource("SpriteFrames_y4wfi")
+[node name="Options" type="TextureButton" parent="."]
+offset_left = 64.0
+offset_top = 352.0
+offset_right = 128.0
+offset_bottom = 384.0
+scale = Vector2(3, 3)
+texture_normal = ExtResource("4_8x20i")
+texture_hover = ExtResource("5_p8swo")
 
-[node name="Quit" type="Button" parent="."]
-offset_left = 428.0
-offset_top = 468.0
-offset_right = 776.0
-offset_bottom = 610.0
-text = "Quit"
+[node name="Quit" type="TextureButton" parent="."]
+offset_left = 64.0
+offset_top = 480.0
+offset_right = 128.0
+offset_bottom = 512.0
+scale = Vector2(3, 3)
+texture_normal = ExtResource("6_8xl34")
+texture_hover = ExtResource("7_o50og")
 
-[node name="quit img" type="AnimatedSprite2D" parent="Quit"]
-position = Vector2(174, 71)
-scale = Vector2(5.71875, 5.125)
-sprite_frames = SubResource("SpriteFrames_qjwds")
-
-[node name="Options" type="Button" parent="."]
-offset_left = 444.0
-offset_top = 287.0
-offset_right = 761.0
-offset_bottom = 428.0
-text = "Options
-"
-
-[node name="options img" type="AnimatedSprite2D" parent="Options"]
-position = Vector2(163, 71)
-scale = Vector2(5.17188, 5.09375)
-sprite_frames = SubResource("SpriteFrames_0ef6g")
-
-[node name="ParallaxBackground" type="ParallaxBackground" parent="."]
-
-[node name="ParallaxLayer" type="ParallaxLayer" parent="ParallaxBackground"]
-
-[node name="Sprite2D2" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer"]
+[node name="Sprite2D2" type="Sprite2D" parent="."]
+show_behind_parent = true
+light_mask = 2
 visibility_layer = 2
-position = Vector2(578, 324)
+position = Vector2(576, 324)
 scale = Vector2(1.8, 1.8)
 texture = ExtResource("6_huwn4")
 
-[node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer"]
+[node name="Sprite2D" type="Sprite2D" parent="."]
+show_behind_parent = true
+light_mask = 2
 visibility_layer = 2
-position = Vector2(578, 324)
+position = Vector2(576, 324)
 scale = Vector2(1.8, 1.8)
 texture = ExtResource("5_ayr31")
 
-[connection signal="mouse_entered" from="start" to="." method="_on_start_mouse_entered"]
-[connection signal="mouse_exited" from="start" to="." method="_on_start_mouse_exited"]
-[connection signal="pressed" from="start" to="." method="_on_start_pressed"]
-[connection signal="mouse_entered" from="Quit" to="." method="_on_quit_mouse_entered"]
-[connection signal="mouse_exited" from="Quit" to="." method="_on_quit_mouse_exited"]
+[connection signal="pressed" from="Start" to="." method="_on_start_pressed"]
 [connection signal="pressed" from="Quit" to="." method="_on_quit_pressed"]
-[connection signal="mouse_entered" from="Options" to="." method="_on_options_mouse_entered"]
-[connection signal="mouse_exited" from="Options" to="." method="_on_options_mouse_exited"]

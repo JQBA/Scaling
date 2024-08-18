@@ -3,6 +3,7 @@
 [ext_resource type="Script" path="res://DuplicationCheese.gd" id="1_mgr8b"]
 [ext_resource type="Texture2D" uid="uid://bak4w4x1aqwnj" path="res://Assets/Cheese-PNG-Pic-Background.png" id="2_fbsvn"]
 
+
 [sub_resource type="CircleShape2D" id="CircleShape2D_ojan1"]
 radius = 57.3062
 

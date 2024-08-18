@@ -3,6 +3,7 @@
 [ext_resource type="Script" path="res://Scipts/EndDoor.gd" id="1_dpef0"]
 [ext_resource type="Texture2D" uid="uid://c4jrgmapxy6aq" path="res://Assets/fantastic-wooden-door.jpg" id="1_llbmv"]
 
+
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_pj0s1"]
 
 [node name="EndDoor" type="Area2D"]
