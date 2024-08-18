@@ -7,7 +7,7 @@
 [ext_resource type="Texture2D" uid="uid://bte235xyth1ru" path="res://Backgrounds/Background1.png" id="5_ayr31"]
 [ext_resource type="Texture2D" uid="uid://cpnisp8q2fr7b" path="res://Assets/Buttons/Options/optionbutton_down.png" id="5_p8swo"]
 [ext_resource type="Texture2D" uid="uid://brxrrop4j82qg" path="res://Assets/Buttons/Quit/quitbutton_up.png" id="6_8xl34"]
-[ext_resource type="Texture2D" uid="uid://bf2to6ajgpsfw" path="res://Backgrounds/Background2.png" id="6_huwn4"]
+[ext_resource type="Texture2D" uid="uid://b1l5q0ejdiu4i" path="res://Backgrounds/Background2.png" id="6_huwn4"]
 [ext_resource type="Texture2D" uid="uid://4sn4dnv3b8ex" path="res://Assets/Buttons/Quit/quitbutton_down.png" id="7_o50og"]
 [ext_resource type="Shader" path="res://Scipts/Main Menu/Pillars.gdshader" id="8_f8cpv"]
 [ext_resource type="Shader" path="res://Scipts/Main Menu/background.gdshader" id="10_5e0rg"]
