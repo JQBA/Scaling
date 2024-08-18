@@ -14,4 +14,5 @@ func _process(delta):
 
 func _on_body_entered(body):
 	var EndScreenSpawn = EndScreen.instantiate()
+	body.queue_free()
 	get_tree().get_current_scene().add_child(EndScreenSpawn)
