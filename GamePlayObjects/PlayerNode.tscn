@@ -1,10 +1,10 @@
 [gd_scene load_steps=4 format=3 uid="uid://bt1kg0e8y8pqe"]
 
 [ext_resource type="Script" path="res://Scipts/PlayerScipt.gd" id="1_sysrc"]
-[ext_resource type="Texture2D" uid="uid://drmwwam23nw1b" path="res://Assets/thiccRatpng.png" id="2_lm3fs"]
+[ext_resource type="Texture2D" path="res://Assets/smallRat.png" id="2_jfqr7"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_uvv55"]
-size = Vector2(130, 70)
+size = Vector2(125, 26)
 
 [node name="PlayerNode" type="CharacterBody2D"]
 position = Vector2(3, 19)
@@ -12,11 +12,13 @@ collision_layer = 2
 script = ExtResource("1_sysrc")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(0, -45.75)
+position = Vector2(1.875, -29.25)
 scale = Vector2(0.75, 0.75)
 shape = SubResource("RectangleShape2D_uvv55")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-position = Vector2(0, -68)
-scale = Vector2(0.75, 0.765)
-texture = ExtResource("2_lm3fs")
+position = Vector2(2, -28)
+scale = Vector2(2.54054, 2.22222)
+texture = ExtResource("2_jfqr7")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
