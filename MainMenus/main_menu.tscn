@@ -1,9 +1,11 @@
-[gd_scene load_steps=14 format=3 uid="uid://dge28ftgl0fv0"]
+[gd_scene load_steps=16 format=3 uid="uid://dge28ftgl0fv0"]
 
 [ext_resource type="Script" path="res://MainMenus/main_menu.gd" id="2_fvi5q"]
 [ext_resource type="Texture2D" uid="uid://dxii2lb0cryud" path="res://Assets/start_button.png" id="2_jnj5t"]
 [ext_resource type="Texture2D" uid="uid://bf80d0ernq5n2" path="res://Assets/quit_button.png" id="3_jbowe"]
 [ext_resource type="Texture2D" uid="uid://c4x2mpn7cirie" path="res://Assets/options_button.png" id="4_s8cx8"]
+[ext_resource type="Texture2D" uid="uid://bte235xyth1ru" path="res://Assets/Background1.png" id="5_ayr31"]
+[ext_resource type="Texture2D" uid="uid://bf2to6ajgpsfw" path="res://Assets/Background2.png" id="6_huwn4"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_chxga"]
 atlas = ExtResource("2_jnj5t")
@@ -110,6 +112,22 @@ text = "Options
 position = Vector2(163, 71)
 scale = Vector2(5.17188, 5.09375)
 sprite_frames = SubResource("SpriteFrames_0ef6g")
+
+[node name="ParallaxBackground" type="ParallaxBackground" parent="."]
+
+[node name="ParallaxLayer" type="ParallaxLayer" parent="ParallaxBackground"]
+
+[node name="Sprite2D2" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer"]
+visibility_layer = 2
+position = Vector2(578, 324)
+scale = Vector2(1.8, 1.8)
+texture = ExtResource("6_huwn4")
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer"]
+visibility_layer = 2
+position = Vector2(578, 324)
+scale = Vector2(1.8, 1.8)
+texture = ExtResource("5_ayr31")
 
 [connection signal="mouse_entered" from="start" to="." method="_on_start_mouse_entered"]
 [connection signal="mouse_exited" from="start" to="." method="_on_start_mouse_exited"]
