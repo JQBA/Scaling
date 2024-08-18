@@ -1,4 +1,4 @@
-[gd_scene load_steps=4 format=3 uid="uid://brepy0nkiqrib"]
+[gd_scene load_steps=4 format=3 uid="uid://cucgojnwehhe2"]
 
 [ext_resource type="Script" path="res://Scipts/RattrapCatapult.gd" id="1_4j1r8"]
 [ext_resource type="Texture2D" uid="uid://cl2hho4yulne3" path="res://Assets/RatTrap.jpg" id="2_yiv7t"]

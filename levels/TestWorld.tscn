@@ -1,7 +1,8 @@
-[gd_scene load_steps=6 format=3 uid="uid://3lus1g6re5gs"]
+[gd_scene load_steps=7 format=3 uid="uid://3lus1g6re5gs"]
 
 [ext_resource type="Script" path="res://LevelScript.gd" id="1_diwxs"]
 [ext_resource type="PackedScene" uid="uid://bt1kg0e8y8pqe" path="res://GamePlayObjects/PlayerNode.tscn" id="2_eq8bi"]
+[ext_resource type="PackedScene" uid="uid://cucgojnwehhe2" path="res://GamePlayObjects/RattrapCatapult.tscn" id="4_kc034"]
 [ext_resource type="PackedScene" uid="uid://bkwmxdq7lkoxa" path="res://GamePlayObjects/EndDoor.tscn" id="5_gtyjv"]
 
 [sub_resource type="QuadMesh" id="QuadMesh_hb7cc"]
@@ -31,6 +32,10 @@ shape = SubResource("RectangleShape2D_p12gy")
 [node name="EndDoor" parent="." instance=ExtResource("5_gtyjv")]
 visibility_layer = 2
 position = Vector2(903, 180)
+collision_mask = 2
+
+[node name="RatTrap" parent="." instance=ExtResource("4_kc034")]
+position = Vector2(241, 232)
 collision_mask = 2
 
 [connection signal="child_exiting_tree" from="." to="." method="_on_child_exiting_tree"]
