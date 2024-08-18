@@ -1,4 +1,4 @@
-[gd_scene load_steps=14 format=3 uid="uid://dge28ftgl0fv0"]
+[gd_scene load_steps=15 format=3 uid="uid://dge28ftgl0fv0"]
 
 [ext_resource type="Script" path="res://MainMenus/main_menu.gd" id="2_fvi5q"]
 [ext_resource type="Texture2D" uid="uid://c1hiex5kmp5cm" path="res://Assets/Buttons/Start/startbutton_up.png" id="2_mmul1"]
@@ -11,6 +11,7 @@
 [ext_resource type="Texture2D" uid="uid://4sn4dnv3b8ex" path="res://Assets/Buttons/Quit/quitbutton_down.png" id="7_o50og"]
 [ext_resource type="Shader" path="res://Scipts/Main Menu/Pillars.gdshader" id="8_f8cpv"]
 [ext_resource type="Shader" path="res://Scipts/Main Menu/background.gdshader" id="10_5e0rg"]
+[ext_resource type="AudioStream" uid="uid://sixleqeicly1" path="res://Assets/Gouda(quiet).wav" id="12_r00na"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_er8lg"]
 shader = ExtResource("8_f8cpv")
@@ -69,6 +70,10 @@ material = SubResource("ShaderMaterial_x35x8")
 position = Vector2(576, 324)
 scale = Vector2(1.8, 1.8)
 texture = ExtResource("6_huwn4")
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("12_r00na")
+autoplay = true
 
 [connection signal="pressed" from="Start" to="." method="_on_start_pressed"]
 [connection signal="pressed" from="Quit" to="." method="_on_quit_pressed"]
