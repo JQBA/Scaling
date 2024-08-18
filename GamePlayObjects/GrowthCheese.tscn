@@ -1,4 +1,4 @@
-[gd_scene load_steps=4 format=3 uid="uid://i238vynwhmr0"]
+[gd_scene load_steps=4 format=3 uid="uid://b63domy3ko3tn"]
 
 [ext_resource type="Texture2D" uid="uid://b6xs3ouxvjwms" path="res://Assets/piece-cheese-isolated.jpg" id="1_2ufcr"]
 [ext_resource type="Script" path="res://Scipts/GrowthCheese.gd" id="1_cwofg"]

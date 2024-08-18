@@ -1,0 +1,21 @@
+[gd_scene load_steps=4 format=3 uid="uid://brepy0nkiqrib"]
+
+[ext_resource type="Script" path="res://Scipts/RattrapCatapult.gd" id="1_4j1r8"]
+[ext_resource type="Texture2D" uid="uid://cl2hho4yulne3" path="res://Assets/RatTrap.jpg" id="2_yiv7t"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_3xox6"]
+size = Vector2(132, 31)
+
+[node name="RatTrap" type="Area2D"]
+script = ExtResource("1_4j1r8")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(20.9625, 2.5)
+scale = Vector2(0.219759, 0.0861111)
+texture = ExtResource("2_yiv7t")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(21, 2.5)
+shape = SubResource("RectangleShape2D_3xox6")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

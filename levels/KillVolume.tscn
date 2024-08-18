@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=3 uid="uid://81ylk0q11ejy"]
+
+[ext_resource type="Script" path="res://Scipts/KillVolume.gd" id="1_8va7p"]
+
+[sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_eiqqx"]
+
+[node name="Area2D" type="Area2D"]
+script = ExtResource("1_8va7p")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(483, 0)
+scale = Vector2(6.64, 1)
+shape = SubResource("WorldBoundaryShape2D_eiqqx")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
