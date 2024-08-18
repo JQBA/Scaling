@@ -18,17 +18,10 @@ func _process(delta):
 		else:
 			currKing += 1
 		ratArmy[currKing].isKing = true
-		#var nextRatFlag = false
-		#for rat in ratArmy:
-			#if rat == ratArmy[-1]:
-				#rat.isKing = true
-				#break
-			#elif nextRatFlag:
-				#rat.isKing = true
-				#nextRatFlag = false
-				#break
-			#if rat.isKing:
-				#nextRatFlag = true
-				#rat.isKing = false
-				#continue
+
+#func _on_child_exiting_tree(node):
+	#var ratArmy = find_children("", "CharacterBody2D", true, false)
+	#if len(ratArmy) == 0 && find_child("EndLevelScreen", false, false) == null:
+		#get_tree().reload_current_scene()
 	
+			

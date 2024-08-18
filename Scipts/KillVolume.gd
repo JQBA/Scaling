@@ -1,4 +1,7 @@
 extends Area2D
 
 func _on_body_entered(body):
-	get_tree().reload_current_scene()
+	if body.isKing:
+		get_tree().reload_current_scene()
+	else:
+		body.queue_free()

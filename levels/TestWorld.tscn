@@ -17,6 +17,7 @@ script = ExtResource("1_diwxs")
 [node name="PlayerNode" parent="." instance=ExtResource("2_eq8bi")]
 top_level = true
 position = Vector2(787, 269)
+collision_layer = 3
 isKing = true
 
 [node name="StaticBody2D" type="StaticBody2D" parent="."]
@@ -39,9 +40,9 @@ collision_mask = 2
 position = Vector2(90, 210)
 
 [node name="DuplicationCheese2" parent="." instance=ExtResource("4_q8r7e")]
-position = Vector2(285, 200)
+position = Vector2(285, 210)
 
 [node name="DuplicationCheese3" parent="." instance=ExtResource("4_q8r7e")]
-position = Vector2(473, 194)
+position = Vector2(471, 216)
 
 [connection signal="child_exiting_tree" from="." to="." method="_on_child_exiting_tree"]
