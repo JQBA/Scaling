@@ -4,8 +4,7 @@
 [ext_resource type="Texture2D" uid="uid://dglhcyi8m03li" path="res://Assets/menu.png" id="1_y3h5p"]
 [ext_resource type="Texture2D" uid="uid://c5uf6o4fvq0id" path="res://Assets/Sprite_Sheet.png" id="2_88gke"]
 [ext_resource type="PackedScene" uid="uid://bt1kg0e8y8pqe" path="res://GamePlayObjects/PlayerNode.tscn" id="3_sa3p5"]
-[ext_resource type="PackedScene" uid="uid://dehltyk5itfqe" path="res://GamePlayObjects/DuplicationCheese.tscn" id="4_plotx"]
-
+[ext_resource type="PackedScene" uid="uid://j83n4h0w7yn" path="res://GamePlayObjects/DuplicationCheese.tscn" id="4_plotx"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_2i6n4"]
 texture = ExtResource("2_88gke")

@@ -1,8 +1,7 @@
-[gd_scene load_steps=4 format=3 uid="uid://dehltyk5itfqe"]
+[gd_scene load_steps=4 format=3 uid="uid://j83n4h0w7yn"]
 
 [ext_resource type="Script" path="res://DuplicationCheese.gd" id="1_mgr8b"]
-[ext_resource type="Texture2D" uid="uid://bak4w4x1aqwnj" path="res://Assets/Cheese-PNG-Pic-Background.png" id="2_fbsvn"]
-
+[ext_resource type="Texture2D" uid="uid://dpk0mj3pj1cd6" path="res://Assets/Cheese.png" id="2_d2a8i"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_ojan1"]
 radius = 57.3062
@@ -12,8 +11,8 @@ collision_mask = 2
 script = ExtResource("1_mgr8b")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-scale = Vector2(0.15, 0.15)
-texture = ExtResource("2_fbsvn")
+scale = Vector2(1.1, 1.1)
+texture = ExtResource("2_d2a8i")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("CircleShape2D_ojan1")
