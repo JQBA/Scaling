@@ -4,7 +4,7 @@
 [ext_resource type="Texture2D" uid="uid://dpk0mj3pj1cd6" path="res://Assets/Cheese.png" id="2_d2a8i"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_ojan1"]
-radius = 57.3062
+radius = 21.095
 
 [node name="DuplicationCheese" type="Area2D"]
 collision_mask = 2

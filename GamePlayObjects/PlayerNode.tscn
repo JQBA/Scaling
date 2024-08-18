@@ -4,16 +4,15 @@
 [ext_resource type="Texture2D" uid="uid://drmwwam23nw1b" path="res://Assets/thiccRatpng.png" id="2_lm3fs"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_uvv55"]
-size = Vector2(130, 132)
+size = Vector2(130, 70)
 
 [node name="PlayerNode" type="CharacterBody2D"]
 position = Vector2(3, 19)
-scale = Vector2(0.545, 0.556)
 collision_layer = 2
 script = ExtResource("1_sysrc")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(0, -69)
+position = Vector2(0, -45.75)
 scale = Vector2(0.75, 0.75)
 shape = SubResource("RectangleShape2D_uvv55")
 
