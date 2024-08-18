@@ -4,7 +4,7 @@
 [ext_resource type="Texture2D" path="res://Assets/smallRat.png" id="2_jfqr7"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_uvv55"]
-size = Vector2(125, 26)
+size = Vector2(50.6667, 17.3333)
 
 [node name="PlayerNode" type="CharacterBody2D"]
 position = Vector2(3, 19)
@@ -12,13 +12,13 @@ collision_layer = 2
 script = ExtResource("1_sysrc")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(1.875, -29.25)
+position = Vector2(-26, -23.5)
 scale = Vector2(0.75, 0.75)
 shape = SubResource("RectangleShape2D_uvv55")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-position = Vector2(2, -28)
-scale = Vector2(2.54054, 2.22222)
+position = Vector2(-26.5, -23)
+scale = Vector2(1, 1.11111)
 texture = ExtResource("2_jfqr7")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
