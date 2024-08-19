@@ -34,6 +34,7 @@ shape = SubResource("RectangleShape2D_p12gy")
 visibility_layer = 2
 position = Vector2(903, 180)
 collision_mask = 2
+nextLevel = "res://levels/level_01.tscn"
 
 [node name="DuplicationCheese" parent="." instance=ExtResource("4_q8r7e")]
 position = Vector2(90, 210)
