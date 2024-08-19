@@ -1,4 +1,8 @@
-[gd_scene format=3 uid="uid://xgsitwcspkva"]
+[gd_scene load_steps=2 format=3 uid="uid://xgsitwcspkva"]
+
+[sub_resource type="TileSet" id="TileSet_1lsit"]
+tile_size = Vector2i(32, 32)
+physics_layer_0/collision_layer = 1
 
 [node name="Level05" type="Node2D"]
 
@@ -7,3 +11,9 @@
 [node name="ParallaxLayer" type="ParallaxLayer" parent="ParallaxBackground"]
 
 [node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer"]
+
+[node name="TileMap" type="TileMap" parent="."]
+tile_set = SubResource("TileSet_1lsit")
+rendering_quadrant_size = 32
+collision_animatable = true
+format = 2

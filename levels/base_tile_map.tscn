@@ -1,0 +1,13 @@
+[gd_scene load_steps=2 format=3 uid="uid://bch64yvp6pxcn"]
+
+[sub_resource type="TileSet" id="TileSet_si3bg"]
+tile_size = Vector2i(32, 32)
+physics_layer_0/collision_layer = 1
+
+[node name="BaseTileMap" type="Node2D"]
+
+[node name="TileMap" type="TileMap" parent="."]
+tile_set = SubResource("TileSet_si3bg")
+rendering_quadrant_size = 32
+collision_animatable = true
+format = 2
