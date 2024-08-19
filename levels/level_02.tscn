@@ -1,5 +1,6 @@
-[gd_scene load_steps=5 format=3 uid="uid://btnwxjq5trpjh"]
+[gd_scene load_steps=6 format=3 uid="uid://btnwxjq5trpjh"]
 
+[ext_resource type="Script" path="res://LevelScript.gd" id="1_5x1ej"]
 [ext_resource type="PackedScene" uid="uid://bt1kg0e8y8pqe" path="res://GamePlayObjects/PlayerNode.tscn" id="2_dgls6"]
 [ext_resource type="PackedScene" uid="uid://dehltyk5itfqe" path="res://GamePlayObjects/DuplicationCheese.tscn" id="3_oqvta"]
 [ext_resource type="PackedScene" uid="uid://bkwmxdq7lkoxa" path="res://GamePlayObjects/EndDoor.tscn" id="4_fmqpu"]
@@ -9,6 +10,7 @@ tile_size = Vector2i(32, 32)
 physics_layer_0/collision_layer = 1
 
 [node name="Level02" type="Node2D"]
+script = ExtResource("1_5x1ej")
 
 [node name="ParallaxBackground" type="ParallaxBackground" parent="."]
 

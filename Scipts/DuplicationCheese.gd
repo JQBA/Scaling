@@ -1,7 +1,5 @@
 extends Area2D
 
-@export var BeenActivated = false
-
 var PlayerClone = load("res://GamePlayObjects/PlayerNode.tscn")
 
 # Called when the node enters the scene tree for the first time.

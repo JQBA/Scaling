@@ -1,6 +1,7 @@
-[gd_scene load_steps=4 format=3 uid="uid://cupbknmf3ekch"]
+[gd_scene load_steps=5 format=3 uid="uid://cupbknmf3ekch"]
 
 [ext_resource type="Texture2D" uid="uid://c5uf6o4fvq0id" path="res://Assets/Sprite_Sheet.png" id="1_dod2g"]
+[ext_resource type="Script" path="res://LevelScript.gd" id="1_g5y6s"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_6c0mo"]
 texture = ExtResource("1_dod2g")
@@ -42,6 +43,7 @@ physics_layer_0/collision_layer = 1
 sources/0 = SubResource("TileSetAtlasSource_6c0mo")
 
 [node name="Level04" type="Node2D"]
+script = ExtResource("1_g5y6s")
 
 [node name="ParallaxBackground" type="ParallaxBackground" parent="."]
 

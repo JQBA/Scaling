@@ -6,25 +6,25 @@
 script = ExtResource("1_sabt8")
 
 [node name="NextLevelButton" type="Button" parent="."]
-offset_left = 668.0
-offset_top = 371.0
-offset_right = 758.0
-offset_bottom = 402.0
+offset_left = 419.0
+offset_top = 152.0
+offset_right = 645.0
+offset_bottom = 218.0
 text = "Next Level"
 
 [node name="EndGameButton" type="Button" parent="."]
-offset_left = 324.0
-offset_top = 369.0
-offset_right = 411.0
-offset_bottom = 400.0
+offset_left = 487.0
+offset_top = 326.0
+offset_right = 574.0
+offset_bottom = 357.0
 text = "Exit Game
 "
 
 [node name="ResetLevel" type="Button" parent="."]
-offset_left = 503.0
-offset_top = 369.0
-offset_right = 568.0
-offset_bottom = 400.0
+offset_left = 500.0
+offset_top = 249.0
+offset_right = 565.0
+offset_bottom = 280.0
 text = "Restart
 "
 

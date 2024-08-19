@@ -1,10 +1,13 @@
-[gd_scene load_steps=2 format=3 uid="uid://xgsitwcspkva"]
+[gd_scene load_steps=3 format=3 uid="uid://xgsitwcspkva"]
+
+[ext_resource type="Script" path="res://LevelScript.gd" id="1_07yxv"]
 
 [sub_resource type="TileSet" id="TileSet_1lsit"]
 tile_size = Vector2i(32, 32)
 physics_layer_0/collision_layer = 1
 
 [node name="Level05" type="Node2D"]
+script = ExtResource("1_07yxv")
 
 [node name="ParallaxBackground" type="ParallaxBackground" parent="."]
 

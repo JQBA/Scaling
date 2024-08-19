@@ -1,0 +1,19 @@
+[gd_scene load_steps=4 format=3 uid="uid://d2b4nhovlfuy2"]
+
+[ext_resource type="Script" path="res://Scipts/FatRat.gd" id="1_0vanr"]
+[ext_resource type="Texture2D" uid="uid://drmwwam23nw1b" path="res://Assets/thiccRatpng.png" id="2_w2fmc"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_67xm2"]
+size = Vector2(194, 70)
+
+[node name="FatRat" type="CharacterBody2D"]
+script = ExtResource("1_0vanr")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(42, 12)
+shape = SubResource("RectangleShape2D_67xm2")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(38, -22.5)
+scale = Vector2(1.50667, 1.45)
+texture = ExtResource("2_w2fmc")

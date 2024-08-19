@@ -5,15 +5,15 @@
 [ext_resource type="Texture2D" uid="uid://cbqka776em4ho" path="res://Assets/ratCrown.png" id="3_yo05v"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_uvv55"]
-size = Vector2(50.6667, 17.3333)
+size = Vector2(50.6667, 16)
 
 [node name="PlayerNode" type="CharacterBody2D"]
 position = Vector2(3, 19)
-collision_layer = 2
+collision_layer = 3
 script = ExtResource("1_sysrc")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(-26, -23.5)
+position = Vector2(-26, -23)
 scale = Vector2(0.75, 0.75)
 shape = SubResource("RectangleShape2D_uvv55")
 

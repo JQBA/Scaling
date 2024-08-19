@@ -1,6 +1,6 @@
 [gd_scene load_steps=4 format=3 uid="uid://dehltyk5itfqe"]
 
-[ext_resource type="Script" path="res://DuplicationCheese.gd" id="1_mgr8b"]
+[ext_resource type="Script" path="res://Scipts/DuplicationCheese.gd" id="1_mgr8b"]
 [ext_resource type="Texture2D" uid="uid://dpk0mj3pj1cd6" path="res://Assets/Cheese.png" id="2_d2a8i"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_ojan1"]
