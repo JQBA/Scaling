@@ -1,7 +1,8 @@
-[gd_scene load_steps=8 format=3 uid="uid://cupbknmf3ekch"]
+[gd_scene load_steps=9 format=3 uid="uid://cupbknmf3ekch"]
 
 [ext_resource type="Texture2D" uid="uid://c5uf6o4fvq0id" path="res://Assets/Sprite_Sheet.png" id="1_dod2g"]
 [ext_resource type="Script" path="res://LevelScript.gd" id="1_g5y6s"]
+[ext_resource type="PackedScene" uid="uid://dx8u2qgajt305" path="res://levels/KillVolume.tscn" id="2_ntt2s"]
 [ext_resource type="PackedScene" uid="uid://bt1kg0e8y8pqe" path="res://GamePlayObjects/PlayerNode.tscn" id="3_l15ty"]
 [ext_resource type="PackedScene" uid="uid://dehltyk5itfqe" path="res://GamePlayObjects/DuplicationCheese.tscn" id="4_6id5g"]
 [ext_resource type="PackedScene" uid="uid://bkwmxdq7lkoxa" path="res://GamePlayObjects/EndDoor.tscn" id="5_t2e7w"]
@@ -48,6 +49,9 @@ sources/0 = SubResource("TileSetAtlasSource_6c0mo")
 [node name="Level04" type="Node2D"]
 script = ExtResource("1_g5y6s")
 
+[node name="Area2D2" parent="." instance=ExtResource("2_ntt2s")]
+position = Vector2(516, 270)
+
 [node name="ParallaxBackground" type="ParallaxBackground" parent="."]
 
 [node name="ParallaxLayer" type="ParallaxLayer" parent="ParallaxBackground"]
@@ -63,6 +67,7 @@ layer_0/tile_data = PackedInt32Array(131074, 393216, 0, 131075, 393216, 0, 13107
 
 [node name="PlayerNode" parent="." instance=ExtResource("3_l15ty")]
 position = Vector2(98, 358)
+isKing = true
 
 [node name="DuplicationCheese" parent="." instance=ExtResource("4_6id5g")]
 position = Vector2(147, 321)
@@ -108,3 +113,7 @@ position = Vector2(513, 280)
 
 [node name="DuplicationCheese4" parent="." instance=ExtResource("4_6id5g")]
 position = Vector2(84, 298)
+
+[node name="KillVolume" parent="." instance=ExtResource("2_ntt2s")]
+position = Vector2(32, 674)
+scale = Vector2(1.52, 1)
