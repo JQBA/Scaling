@@ -121,7 +121,7 @@ position = Vector2(550, 344)
 
 [node name="EndDoor" parent="." instance=ExtResource("7_738pi")]
 position = Vector2(366, 499)
-nextLevel = "res://levels/level_03.tscn"
+nextLevel = "res://levels/level_02.tscn"
 
 [node name="Area2D" parent="." instance=ExtResource("8_5xubm")]
 position = Vector2(64, 657)
