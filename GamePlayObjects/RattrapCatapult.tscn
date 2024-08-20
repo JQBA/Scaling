@@ -1,7 +1,7 @@
 [gd_scene load_steps=4 format=3 uid="uid://cucgojnwehhe2"]
 
 [ext_resource type="Script" path="res://Scipts/RattrapCatapult.gd" id="1_4j1r8"]
-[ext_resource type="Texture2D" uid="uid://cl2hho4yulne3" path="res://Assets/RatTrap.jpg" id="2_yiv7t"]
+[ext_resource type="Texture2D" uid="uid://y762umef1v7q" path="res://Assets/mouseTrap.png" id="2_71sdd"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_3xox6"]
 size = Vector2(132, 31)
@@ -11,9 +11,9 @@ collision_mask = 2
 script = ExtResource("1_4j1r8")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-position = Vector2(20.9625, 2.5)
-scale = Vector2(0.219759, 0.0861111)
-texture = ExtResource("2_yiv7t")
+position = Vector2(21.5, 2.5)
+scale = Vector2(1.39362, 1.52632)
+texture = ExtResource("2_71sdd")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(21, 2.5)

@@ -1,10 +1,11 @@
-[gd_scene load_steps=8 format=3 uid="uid://bvs3fe2nnwtbk"]
+[gd_scene load_steps=9 format=3 uid="uid://bvs3fe2nnwtbk"]
 
 [ext_resource type="Texture2D" uid="uid://c5uf6o4fvq0id" path="res://Assets/Sprite_Sheet.png" id="1_72eaj"]
 [ext_resource type="Script" path="res://LevelScript.gd" id="1_nrjbj"]
 [ext_resource type="PackedScene" uid="uid://bt1kg0e8y8pqe" path="res://GamePlayObjects/PlayerNode.tscn" id="3_hai1h"]
 [ext_resource type="PackedScene" uid="uid://bkwmxdq7lkoxa" path="res://GamePlayObjects/EndDoor.tscn" id="4_6puoa"]
 [ext_resource type="PackedScene" uid="uid://dehltyk5itfqe" path="res://GamePlayObjects/DuplicationCheese.tscn" id="5_4c3w3"]
+[ext_resource type="PackedScene" uid="uid://cucgojnwehhe2" path="res://GamePlayObjects/RattrapCatapult.tscn" id="6_210k7"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_03krv"]
 texture = ExtResource("1_72eaj")
@@ -106,3 +107,6 @@ position = Vector2(858, 299)
 
 [node name="PlayerNode2" parent="." instance=ExtResource("3_hai1h")]
 position = Vector2(299, 77)
+
+[node name="RatTrap" parent="." instance=ExtResource("6_210k7")]
+position = Vector2(46, 524)
