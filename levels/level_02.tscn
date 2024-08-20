@@ -87,7 +87,7 @@ position = Vector2(677, 302)
 position = Vector2(451, 243)
 
 [node name="DuplicationCheese10" parent="." instance=ExtResource("3_oqvta")]
-position = Vector2(67, 242)
+position = Vector2(67, 260)
 
 [node name="DuplicationCheese11" parent="." instance=ExtResource("3_oqvta")]
 position = Vector2(752, 307)
