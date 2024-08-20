@@ -125,3 +125,12 @@ nextLevel = "res://levels/level_02.tscn"
 
 [node name="Area2D" parent="." instance=ExtResource("8_5xubm")]
 position = Vector2(64, 657)
+
+[node name="Label" type="Label" parent="."]
+offset_left = 666.0
+offset_top = 510.0
+offset_right = 706.0
+offset_bottom = 533.0
+text = "Q: Swap King Rat
+SPACE: Jump
+"
