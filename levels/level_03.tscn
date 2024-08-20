@@ -1,9 +1,10 @@
-[gd_scene load_steps=7 format=3 uid="uid://bvs3fe2nnwtbk"]
+[gd_scene load_steps=8 format=3 uid="uid://bvs3fe2nnwtbk"]
 
 [ext_resource type="Texture2D" uid="uid://c5uf6o4fvq0id" path="res://Assets/Sprite_Sheet.png" id="1_72eaj"]
 [ext_resource type="Script" path="res://LevelScript.gd" id="1_nrjbj"]
 [ext_resource type="PackedScene" uid="uid://bt1kg0e8y8pqe" path="res://GamePlayObjects/PlayerNode.tscn" id="3_hai1h"]
 [ext_resource type="PackedScene" uid="uid://bkwmxdq7lkoxa" path="res://GamePlayObjects/EndDoor.tscn" id="4_6puoa"]
+[ext_resource type="PackedScene" uid="uid://dehltyk5itfqe" path="res://GamePlayObjects/DuplicationCheese.tscn" id="5_4c3w3"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_03krv"]
 texture = ExtResource("1_72eaj")
@@ -75,3 +76,33 @@ isKing = true
 [node name="EndDoor" parent="." instance=ExtResource("4_6puoa")]
 position = Vector2(817, 118)
 nextLevel = "res://levels/level_04.tscn"
+
+[node name="DuplicationCheese" parent="." instance=ExtResource("5_4c3w3")]
+position = Vector2(130, 46)
+
+[node name="DuplicationCheese8" parent="." instance=ExtResource("5_4c3w3")]
+position = Vector2(74, 528)
+
+[node name="DuplicationCheese9" parent="." instance=ExtResource("5_4c3w3")]
+position = Vector2(74, 528)
+
+[node name="DuplicationCheese2" parent="." instance=ExtResource("5_4c3w3")]
+position = Vector2(945, 393)
+
+[node name="DuplicationCheese3" parent="." instance=ExtResource("5_4c3w3")]
+position = Vector2(212, 360)
+
+[node name="DuplicationCheese4" parent="." instance=ExtResource("5_4c3w3")]
+position = Vector2(163, 134)
+
+[node name="DuplicationCheese5" parent="." instance=ExtResource("5_4c3w3")]
+position = Vector2(361, 134)
+
+[node name="DuplicationCheese6" parent="." instance=ExtResource("5_4c3w3")]
+position = Vector2(552, 134)
+
+[node name="DuplicationCheese7" parent="." instance=ExtResource("5_4c3w3")]
+position = Vector2(858, 299)
+
+[node name="PlayerNode2" parent="." instance=ExtResource("3_hai1h")]
+position = Vector2(299, 77)
